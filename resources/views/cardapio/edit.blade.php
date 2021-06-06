@@ -7,7 +7,7 @@
 
 @section('content')
     <div class="container">
-        <h2>Novo cardápio</h2>
+        <h2>Editar cardápio</h2>
 
         <a href="">Criar novo cardapio</a>
         <form action="{{route('cardapio.update')}}" method="post">
@@ -37,7 +37,7 @@
                 <label for="exampleInputPassword1">Descrição</label>
                 <textarea class="form-control" name="descricao" id="exampleInputPassword1" placeholder="Descrição" maxlength="200">{{$produto->descricao}}</textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <button type="submit" class="btn btn-primary">Salvar Alterações</button>
         </form>
 
     </div>
