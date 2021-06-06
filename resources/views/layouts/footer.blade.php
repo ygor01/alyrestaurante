@@ -5,7 +5,7 @@
             <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
                 <h2>Queremos saber sua opinião</h2>
                 <p>Se quiser nos contar o que mais gostou do nosso restaurante ou dar uma sugestão em relação ao nosso atendimento clique no botão abaixo. Os depoimentos que forem enviados serão mostrados na nossa página inicial de forma randômica.</p>
-                <p><a href="reservation.html" class="btn btn-primary btn-outline">Avaliar</a></p>
+                <p><a href="depoimento" class="btn btn-primary btn-outline">Avaliar</a></p>
             </div>
         </div>
     </div>

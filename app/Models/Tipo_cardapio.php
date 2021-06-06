@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class Produto extends Authenticatable
+class Tipo_cardapio extends Authenticatable
 {
     use HasFactory, Notifiable;
 
-    protected $table = "produto";
+    protected $table = "cardapio";
     public $timestamps = null;
 
     /**
@@ -19,8 +19,8 @@ class Produto extends Authenticatable
      *
      * @var array
      */
-    public function Tipo_cardapio()
+    public function Produto()
     {
-        return $this->hasOne(Tipo_cardapio::class);
+        return $this->hasMany(Produto::class, 'tipo_id');
     }
 }

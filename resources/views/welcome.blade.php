@@ -115,6 +115,7 @@
                     <blockquote>
                         <p> &ldquo; {{$depoimento->depoimento_cliente}} &rdquo;</p>
                         <p class="author"><cite>&mdash; {{$depoimento->nome_cliente}}</cite></p>
+                        <p>Avaliou com <em class="em">{{$depoimento->num_estrela}}</em> @if($depoimento->num_estrela <= 1) estrela @else estrelas @endif</p>
                     </blockquote>
                 </div>
             </div>

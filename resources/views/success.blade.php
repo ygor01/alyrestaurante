@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>{{ env('APP_NAME') }} - Contato</title>
+	<title>{{ env('APP_NAME') }} - Depoimentos</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -43,7 +43,6 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
 
@@ -63,30 +62,23 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-		@extends('layouts.menu_header')
 
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url(images/restaurante_wallpaper.png);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<h1>Contato</h1>
-						</div>
+
+		<div id="fh5co-contact" class="fh5co-section animate-box">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2><em class="em">{{$nome_cliente}}</em>, muito obrigado por nos enviar seu depoimento.</h2>
+						<br>
+						<p><em class="em"><a href="/">Voltar para a página principal</a></em></p>
 					</div>
 				</div>
+
+
 			</div>
 		</div>
-	</header>
+	
 
-
-
-		@extends('layouts.footer')
-	</div>
-
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
 	
 	<!-- jQuery -->

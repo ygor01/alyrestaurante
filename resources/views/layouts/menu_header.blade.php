@@ -1,3 +1,5 @@
+<link rel="icon" href="{{ asset('icon.ico') }}" type="image/gif" sizes="16x16">
+
 <nav class="fh5co-nav" role="navigation">
     <!-- <div class="top-menu"> -->
     <div class="container">
@@ -10,8 +12,7 @@
                 $menus = array(
              ["nome" => "Início", "url" => "/"],
              ["nome" => "Cardápio", "url" => "/cardapio"],
-             ["nome" => "Sobre", "url" => "/sobre"],
-             ["nome" => "Contato", "url" => "/contato"]);
+             ["nome" => "Sobre", "url" => "/sobre"]);
 
             @endphp
             <div class="col-xs-12 text-center menu-1 menu-wrap">

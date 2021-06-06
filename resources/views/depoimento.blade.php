@@ -78,31 +78,61 @@
 			</div>
 		</div>
 	</header>
-
-	<div id="fh5co-featured-testimony" class="fh5co-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 fh5co-heading animate-box" style="margin-bottom: 0px!important;">
-					<h2>Estamos de olho nos depoimentos</h2>
-					<div class="row">
-						<div class="col-md-6">
-							<p>Com o objetivo de melhorarmos nosso atendimento, estamos diariamente verificando sugestões, reclamações e alogios, tudo isso para entregarmos o nosso melhor.</p>
-						</div>
+		<div id="fh5co-contact" class="fh5co-section animate-box">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Conte-nos o que você achou do nosso <em class="em">restaurante</em>.</h2>
+						<p>Todos os depoimentos que forem enviados serão mostrados na nossa página inicial de forma randômica.</p>
 					</div>
 				</div>
 
-				<div class="col-md-5 animate-box img-to-responsive">
+				<div class="row">
+					<div class="col-md-6 col-md-push-6 col-sm-6 col-sm-push-6">
+						<form action="envia_depoimento" method="POST" id="form-wrap">
+							@csrf
+							<div class="row form-group">
+								<div class="col-md-12">
+									<label for="nome">Nome</label>
+									<input type="text" class="form-control" name="nome" id="nome" required>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-12">
+									<label for="email">Email</label>
+									<input type="text" name="email" class="form-control" id="email" required>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-12">
+									<label for="email">Nota</label>
+									<select name="nota" class="form-control" required>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5" selected>5</option>
+									</select>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-12">
+									<label for="message">Seu depoimento</label>
+									<textarea name="depoimento" id="message" cols="30" rows="10" class="form-control" required></textarea>
+								</div>
+							</div>
+							<div class="row form-group">
+								<div class="col-md-12">
+									<input type="submit" class="btn btn-primary btn-outline btn-lg" value="Enviar">
+								</div>
+							</div>
+
+						</form>
+					</div>
 				</div>
-				<div class="col-md-7 animate-box">
-					<blockquote>
-						<p> &ldquo; {{$depoimento->depoimento_cliente}} &rdquo;</p>
-						<p class="author"><cite>&mdash; {{$depoimento->nome_cliente}}</cite></p>
-					</blockquote>
-				</div>
+
 			</div>
 		</div>
-	</div>
-
 	
 
 

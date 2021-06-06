@@ -42,6 +42,19 @@ class Principalcontroller extends Controller
         return view('depoimento', compact('depoimento'));
     }
 
+    public function depoimento_store(Request $request)
+    {
+        $nome_cliente = $request->nome;
+
+        $avaliacao = new Avaliacao();
+        $avaliacao->produto_id = "1";
+        $avaliacao->nome_cliente = $request->nome;
+        $avaliacao->depoimento_cliente = $request->depoimento;
+        $avaliacao->num_estrela = $request->nota;
+        $avaliacao->save();
+
+        return view("success", compact('nome_cliente'));
+    }
     /**
      * Show the form for creating a new resource.
      *
